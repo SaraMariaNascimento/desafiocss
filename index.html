@@ -1,66 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="./style.css"/>
-  <title>Teste</title>
-</head>
-<body>
-  <header> 
-  <nav class="navBar">
-    <div class="logo">
-      <img src="./img/logo.png" class="img-logo"/>
-      <p class="txt-logo">Programa de capacitação</p>
-    </div>
-    <ul class="menu">
-      <li><a href="#profileLinks">profile</a></li>
-      <li><a href="#skillsLinks">skills</a></li>
-      <li><a href="#galleryLinks">gallery</a></li>
-      <li><a href="#contactLinks">contact</a></li>
-      <li><a href="#topLinks"><i class='bx bx-chevron-up'></i></a></li>
-    </ul>
-  </nav>
-  </header>
-  <main> 
-    <section class="containerDesafio" id="topLinks">
-      <h1>Desafio de CSS - PCVTX 22</h1>
-    </section>
-    <section class="aboutMe">
-      <div class="profile" id="profileLinks">
-        <img src="./img/profilePhoto.png" class="imgProfile"/>
-      </div>
-      <div class="myText">
-        <h4>Sara Nascimento, 20</h4>
-        <h5>São Gonçalo, RJ</h5>
-        <hr/>
-        <p class="txt-profile">Estudante de análise e desenvolvimento de sistemas, apaixonada por solucionar problemas. Nas horas vagas costumo jogar e assistir séries.
-          Possuo experiência em HTML, CSS, BOOTSTRAP, JAVASCRIPT e REACTJS. </p>
-      </div>
-      <div class="imgContainer">
-        <img src="./img/computer.jpg" class="computerImg"/>
-      </div>
-    </section>
-    <section class="techAbilities" id="skillsLinks">
-      <h2 class="txtTitle">Habilidades e competências</h2>
-      <div class="abilities">
-        <img src="./img/html.svg" class="html"/>
-        <img src="./img/css3.svg" class="css"/>
-        <img src="./img/bootstrap.svg" class="bootstrap"/>
-        <img src="./img/javascript.svg" class="javascript"/>
-        <img src="./img/react.svg" class="react"/>
-      </div>
-      <div>
-        <button class="btnGit"> 
-          <a href="https://github.com/SaraMariaNascimento">Github</a>
-        </button>
-      </div>
-    </section>
-    <section class="container-gallery" id="galleryLinks">
-      <h2 class="txtTitle">Galeria de fotos</h2>
-      <div class="gallery">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Desafio CSS3 - Enext = VTEX" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <title>Desafio CSS3 - Enext = Sara Nascimento</title>
+  </head>
+  <body>
+    <header> 
+      <nav class="navBar">
+        <div class="logo">
+          <img src="./img/logo.png" class="img-logo"/>
+          <p class="txt-logo">Programa de capacitação</p>
+        </div>
+        <ul class="menu">
+          <li><a href="#profileLinks">profile</a></li>
+          <li><a href="#skillsLinks">skills</a></li>
+          <li><a href="#galleryLinks">gallery</a></li>
+          <li><a href="#contactLinks">contact</a></li>
+          <li><a href="#topLinks"><i class='bx bx-chevron-up'></i></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main> 
+      <section class="containerDesafio" id="topLinks">
+        <h1>Desafio de CSS - PCVTX 22</h1>
+      </section>
+      <section class="aboutMe">
+        <div class="profile" id="profileLinks">
+          <img src="./img/profilePhoto.png" class="imgProfile"/>
+        </div>
+        <div class="myText">
+          <h4>Sara Nascimento, 20</h4>
+          <h5>São Gonçalo, RJ</h5>
+          <hr/>
+          <p class="txt-profile">Estudante de análise e desenvolvimento de sistemas, apaixonada por solucionar problemas. Nas horas vagas costumo jogar e assistir séries.
+            Possuo experiência em HTML, CSS, BOOTSTRAP, JAVASCRIPT e REACTJS.</p>
+        </div>
+        <div class="imgContainer">
+          <img src="./img/computer.jpg" class="computerImg"/>
+        </div>
+      </section>
+      <section class="techAbilities" id="skillsLinks">
+        <h2 class="txtTitle">Habilidades e competências</h2>
+        <div class="abilities">
+          <img src="./img/html.svg" class="html"/>
+          <img src="./img/css3.svg" class="css"/>
+          <img src="./img/bootstrap.svg" class="bootstrap"/>
+          <img src="./img/javascript.svg" class="javascript"/>
+          <img src="./img/react.svg" class="react"/>
+        </div>
+        <a href="https://github.com/SaraMariaNascimento" class="btnGit" target="_blank" rel="noreferrer noopener">
+          <button>Github</button>
+        </a>
+      </section>
+      <section class="container-gallery" id="galleryLinks">
+        <h2 class="txtTitle">Galeria de fotos</h2>
+        <div class="gallery">
           <img src="./img/gallery-1.jpg"/>
           <img src="./img/gallery-2.jpg"/>
           <img src="./img/gallery-3.jpg"/>
@@ -70,36 +70,37 @@
           <img src="./img/gallery-7.jpg"/>
           <img src="./img/gallery-8.jpg"/>
           <img src="./img/gallery-9.jpg"/>
-      </div>
-    </section>
-    <section class="contact" id="contactLinks">
-      <div class="containerContact">
-        <h3>Entre em contato</h3>
-        <form class="formContact">
-          <div class="campo">
-            <input type="email" required placeholder="Email" class="placeholder"/>
-          </div>
-          <div class="campo">
-            <textarea placeholder="Mensagem" class="placeholder"></textarea>
-          </div>
-          <div class="buttonContact">
-            <button type="submit" class="btn-contact">Enviar</button>
-          </div>
-        </form>
-      </div>
-    </section>
-    <section class="social">
-      <div class="icons">
-        <i class='bx bxl-linkedin-square icon' ></i>
-        <i class='bx bxl-facebook-circle icon' ></i>
-        <i class='bx bxl-twitter icon' ></i>
-        <i class='bx bxl-instagram-alt icon' ></i>
-      </div>
-    </section>
-  </main>
-  <footer class="footerBox">
-    <p>&#169;copyright - 2022.</p>
-    <p>All right reserved.</p>
-  </footer>
-</body>
+        </div>
+      </section>
+      <section class="contact" id="contactLinks">
+        <div class="containerContact">
+          <h3>Entre em contato</h3>
+          <form class="formContact">
+            <div class="campo">
+              <input type="email" required placeholder="Email" class="placeholder"/>
+            </div>
+            <div class="campo">
+              <textarea placeholder="Mensagem" class="placeholder"></textarea>
+            </div>
+            <div class="buttonContact">
+              <button type="submit" class="btn-contact">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="social">
+        <div class="icons">
+          <i class='bx bxl-linkedin-square icon' ></i>
+          <i class='bx bxl-facebook-circle icon' ></i>
+          <i class='bx bxl-twitter icon' ></i>
+          <i class='bx bxl-instagram-alt icon' ></i>
+        </div>
+      </section>
+    </main>
+    <footer class="footerBox">
+      <p>&#169;copyright - 2022.</p>
+      <p>All right reserved.</p>
+    </footer>
+  </body>
 </html>
+
