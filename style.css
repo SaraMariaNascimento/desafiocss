@@ -6,19 +6,28 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-.header{
+.navBar{
   display: flex;
-  justify-content: space-around;
   width: 100%;
+  padding: .4rem 0 .4rem;
+  gap: 1rem;
   position: fixed;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 3;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(255, 255, 255, 0.1);
   box-shadow: 0px 0px 25px -10px rgb(0 0 0 / 25%);
   backdrop-filter: blur(20px);
-  z-index: 3;
 }
 .logo{
-  margin: 1px 20px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  gap: .5rem;
 }
 .img-logo{
   filter: grayscale(100%);
@@ -27,8 +36,6 @@
 .txt-logo{
   color: #fff;
   font-size: 18px;
-  position: absolute;
-  margin-top: 15px;
 }
 
 a{
@@ -37,6 +44,9 @@ a{
 }
 .menu{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   gap:10px;
   margin-bottom: 10px;
   list-style: none;
@@ -54,6 +64,19 @@ a{
   display: flex;
   flex-wrap: wrap; 
 }
+.myText{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  line-height: 1.5;
+  width: 468px;
+}
+.myText > h5{
+  padding-bottom: .7rem;
+}
+.txt-profile{
+  padding: .7rem 0;
+}
 .imgProfile{
   clip-path: circle(50% at 50% 50%);
   width: 60%;
@@ -63,10 +86,18 @@ a{
 .imgContainer{
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
 }
-
 .computerImg{
   border-radius: 10px;
+}
+.techAbilities{
+  margin-top: 1.5rem;
+}
+.container-gallery{
+  margin-top: 1.5rem;
 }
 .txtTitle{
   display: flex;
@@ -181,8 +212,10 @@ input, textarea {
   
 }
 @media (min-width:320px){
-  .logo{
-    margin-right: 145px;
+  .navBar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .txt-logo{
     font-size:14px;
@@ -212,9 +245,6 @@ input, textarea {
   .myText{
     margin-top:75px;
   }
-  h4, h5{
-    margin: 5px;
-  }
   hr{
     width: 95%;
   }
@@ -225,9 +255,6 @@ input, textarea {
     width: 70%;
     margin-top: 25px;
   }
-  /* .techAbilities{
-    margin-top: 55%;
-  } */
   .txtTitle{
     margin: 25px;
     font-size: 20px;
@@ -279,14 +306,12 @@ input, textarea {
 
 @media (min-width:768px){
   .navBar{
-    display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    flex-direction: row;
   }
   .menu{
     gap: 25px;
     margin:15px;
-    margin-left:25%;
   }
   .containerDesafio{
     min-height: 30vh;
@@ -361,9 +386,6 @@ input, textarea {
   .aboutMe{
     display: flex;
     flex-wrap: nowrap;
-  }
-  .myText{
-    width: 60%;
   }
   .btnGit{
     width: 20%;
